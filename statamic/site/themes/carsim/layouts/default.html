@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mechanical Simulation Corporation provides the most accurate and computationally efficient methods for simulating the dynamic performance of cars, trucks, motorcycles, and specialty vehicles. Our software runs with Windows OS and most real-time systems.">
+	<meta name="keywords" content="automotive industry, simulation, dynamics simulation, driving simulator, vehicle dynamics, matlab, simulink, HIL, SIL, MIL, ADAS, real time, RT, vehicle simulation, brake model, motorcycle simulation, truck simulation, carsim, trucksim, bikesim, vehiclesim, modeling, mathworks, dspace, scalexio, VeriStand, national instruments, NI, TESIS, CarMaker, IPG">
+    <title>{{ title or site_title }}</title>
+    <link rel="stylesheet" href="{{ theme:css }}">
+	<!-- styles to control the appearance of the navigation menus -->
+	<link rel="stylesheet" type="text/css" href="/site/themes/carsim/css/ddsmoothmenu.php" />
+	<link rel="stylesheet" href="{{ theme:css src="ddsmoothmenu"}}">
+	<link rel="stylesheet" href="{{ theme:css src="ddsmoothmenu-v"}}">
+</head>
+
+<body>
+<div id="wrapper">
+	<div style="width: 1000px; height:56px; position: relative; background-color:#2d68b2; color:#FFFFFF; font-size: 11px; margin-bottom:0px;">
+
+	<div style="position: absolute; top:6px; left: 36px;">
+    <a href="/" >
+      <img src="/assets/images/mech_sim_header.png" 
+        alt="Go To Mechanical Simulation Corporation Home Page" 
+        title="Go To Mechanical Simulation Corporation Home Page"/>
+    </a>
+	</div>
+
+	<div style="position: absolute; top: 15px; left: 600px;">
+    <a href="https://www.facebook.com/pages/Mechanical-Simulation/158480487520288?ref=br_rs&pnref=lhc" style="font-size: 10px; color: #FFFFFF;">
+      <img src="/assets/images/facebook.png" width="20" height="20"
+        alt="Go To Mechanical Simulation Corporation's Facebook Page"
+        title="Go To Mechanical Simulation Corporation's Facebook Page"/>
+    </a>
+	</div>
+
+	<div style="position: absolute; top: 15px; left: 632px;">
+    <a href="https://www.linkedin.com/company/mechanical-simulation-corporation?trk=nav_account_sub_nav_company_admin" style="font-size: 10px; color: #FFFFFF;">
+      <img src="/assets/images/linkedin.png" width="20" height="20"
+        alt="Go To Mechanical Simulation Corporation's LinkedIn Page"
+        title="Go To Mechanical Simulation Corporation's LinkedIn Page"/>
+    </a>
+	</div>
+
+	<div style="position: absolute; top: 15px; left: 660px;">
+    <a href="https://www.youtube.com/channel/UCSRqaCirU02UL7i51i8VhTg" style="font-size: 10px; color: #FFFFFF;">
+      <img src="/assets/images/youtube.png" width="20" height="20"
+        alt="Go To Mechanical Simulation Corporation's YouTube Page"
+        title="Go To Mechanical Simulation Corporation's YouTube Page"/>
+    </a>
+	</div>
+
+	<div style="position: absolute; top: 18px; left: 728px;">
+    <form method="get" action="https://www.google.com/search" target="_search_results">
+      <span style="font-size: 12px;">Search</span> 
+      <input type="text" name="q" style="font-size: 11px;width:200px;background-color:white;" 
+        value="" maxlength="255" placeholder="Search carsim.com">
+      <input type="hidden" name="sitesearch" value="carsim.com">
+    </form>
+	</div>
+	</div>
+{{ partial:nav }}
+    <div class="container">
+        {{ template_content }}
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="{{ theme:js }}"></script>	
+	<script src="{{ theme:js src="ddsmoothmenu/ddsmoothmenu" }}"></script>
+<script type="text/javascript">
+ddsmoothmenu.init({
+	mainmenuid: "nav-main", //menu DIV id
+	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+	classname: 'container-fluid', //class added to menu's outer DIV
+	//customtheme:  ["normal_background", "hover_background"],
+	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+</script>
+</div>
+</body>
+
+</html>
