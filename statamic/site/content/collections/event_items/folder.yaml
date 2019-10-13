@@ -1,0 +1,7 @@
+title: Events
+order: number
+fieldset: event_fields
+template: events
+columns:
+  - event_date
+  - event_content

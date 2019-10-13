@@ -2,14 +2,14 @@ sections:
   main:
     display: Main
     fields:
-      news_content:
+      event_content:
         cheatsheet: true
         restrict_assets: false
         type: markdown
         display: Content
-      news_date:
+      event_date:
         type: textarea
         display: Date
 taxonomies: true
-title: News
-create_title: 'News Fieldset'
+title: Events
+create_title: 'Events Fieldset'

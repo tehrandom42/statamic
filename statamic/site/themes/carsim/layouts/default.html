@@ -36,58 +36,11 @@
 
 <body>
   <div id="wrapper">
-    <div style="width: 1000px; height:56px; position: relative; background-color:#2d68b2; color:#FFFFFF; font-size: 11px; margin-bottom:0px;">
-
-      <div style="position: absolute; top:6px; left: 36px;">
-        <a href="/">
-          <img src="/assets/images/mech_sim_header.png" alt="Go To Mechanical Simulation Corporation Home Page" title="Go To Mechanical Simulation Corporation Home Page" />
-        </a>
-      </div>
-
-      <div style="position: absolute; top: 15px; left: 600px;">
-        <a href="https://www.facebook.com/pages/Mechanical-Simulation/158480487520288?ref=br_rs&pnref=lhc" style="font-size: 10px; color: #FFFFFF;">
-          <img src="/assets/images/facebook.png" width="20" height="20" alt="Go To Mechanical Simulation Corporation's Facebook Page" title="Go To Mechanical Simulation Corporation's Facebook Page" />
-        </a>
-      </div>
-
-      <div style="position: absolute; top: 15px; left: 632px;">
-        <a href="https://www.linkedin.com/company/mechanical-simulation-corporation?trk=nav_account_sub_nav_company_admin" style="font-size: 10px; color: #FFFFFF;">
-          <img src="/assets/images/linkedin.png" width="20" height="20" alt="Go To Mechanical Simulation Corporation's LinkedIn Page" title="Go To Mechanical Simulation Corporation's LinkedIn Page" />
-        </a>
-      </div>
-
-      <div style="position: absolute; top: 15px; left: 660px;">
-        <a href="https://www.youtube.com/channel/UCSRqaCirU02UL7i51i8VhTg" style="font-size: 10px; color: #FFFFFF;">
-          <img src="/assets/images/youtube.png" width="20" height="20" alt="Go To Mechanical Simulation Corporation's YouTube Page" title="Go To Mechanical Simulation Corporation's YouTube Page" />
-        </a>
-      </div>
-
-      <div style="position: absolute; top: 18px; left: 728px;">
-        <form method="get" action="https://www.google.com/search" target="_search_results">
-          <span style="font-size: 12px;">Search</span>
-          <input type="text" name="q" style="font-size: 11px;width:200px;background-color:white;" value="" maxlength="255" placeholder="Search carsim.com">
-          <input type="hidden" name="sitesearch" value="carsim.com">
-        </form>
-      </div>
-    </div>
+    {{ partial:bluebar }}
     {{ partial:nav }}
     {{ template_content }}
   </div>
-  <div id="wrapper" style="position: relative; height: 24px; background-color:#2d68b2; color:#FFFFFF; ">
-    <div style="position: absolute; top: 4px; left: 50px; text-align:left;">
-      <a href="/contactus/index.php" style="font-size: 12px; color: #FFFFFF; text-decoration: none;" title="Contact Mechanical Simulation Corporation">Contact Us</a>
-    </div>
-    <div style="position: absolute; top: 4px; right: 50px; text-align:left;">
-      <a href="/forms/newsletter.php" style="font-size: 12px; color: #FFFFFF; text-decoration: none;" title="Subscribe To Mechanical Simulation Corporation's Newsletter">Subscribe to Newsletter</a>
-    </div>
-    <div style="clear: both;"></div>
-  </div>
-  <div id="wrapper" style="position: relative; height: 35px; text-align: center; padding-top:3px; background-color: #e9e9e9;">
-    <span style="font-size: 11px; line-height: 1.2em;">
-      &copy; 2005-2019 Mechanical Simulation Corporation, All Rights Reserved.
-      CarSim, SuspensionSim, TruckSim, BikeSim,<br />
-      and VehicleSim are registered trademarks of Mechanical Simulation Corporation
-      in the USA and other countries. </span></div>
+    {{ partial:footer }}
 </body>
 
 </html>

@@ -1,0 +1,99 @@
+.jcarousel-wrapper {
+    position: relative;
+}
+
+
+.jcarousel-wrapper .photo-credits {
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    font-size: 13px;
+    color: #fff;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.85);
+    opacity: .66;
+}
+
+.jcarousel-wrapper .photo-credits a {
+    color: #fff;
+}
+
+/** Carousel **/
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    width: 1000px;  /* was 1024 */
+    height: 335px;
+    border-bottom: 1px solid #ccc;
+}
+
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel li {
+    float: left;
+    margin-left: 0px;
+}
+
+/** Carousel Controls **/
+
+.jcarousel-control-prev,
+.jcarousel-control-next {
+    position: absolute;
+    top: 135px;
+    font: 24px/27px Arial, sans-serif;
+    opacity: 0.6;
+}
+
+.jcarousel-control-prev {
+    left: 8px;
+}
+
+.jcarousel-control-next {
+    right: 8px;
+}
+
+.jcarousel-control-prev:hover span,
+.jcarousel-control-next:hover span {
+    display: block;
+}
+
+.jcarousel-control-prev.inactive,
+.jcarousel-control-next.inactive {
+    opacity: .5;
+    cursor: default;
+}
+
+/** Carousel Pagination **/
+.jcarousel-pagination {
+
+    position: absolute;
+    top: 305px;
+    left: 467px;
+}
+
+.jcarousel-pagination a {
+    text-decoration: none;
+    display: inline-block;
+
+    font-size: 0px;	/*  We make the font-size zero because we do not want the slide numbers to actually show up */
+
+/*  the following are based upon the Amazon-style slide indicators */
+    width: 18px;	/* the background image is 12px wide, so this gives additional 6px spacing between markers */
+    height: 13px;
+    background-repeat: no-repeat;
+    color: #0066c0;
+    background-image: url(/images/jcarousel_inactive_image.png);
+    opacity: 1.0;
+}
+
+.jcarousel-pagination a.active {
+/*  the following are taken from the Amazon-style slide indicators */
+    background-image: url(/images/jcarousel_active_image3.png);
+
+}

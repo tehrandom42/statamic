@@ -1,0 +1,14 @@
+<section class="container-fluid">
+<br>{{ content }}
+
+<div>
+  {{ collection:news_items }}
+  <table border="0" cellpadding="0">
+  <tr>
+    <td class="homepage-date">{{ news_date }}</td>
+    <td class="homepage-desc">{{ news_content | markdown }}</td>
+</tr>
+</table>
+{{ /collection:news_items }}
+</div>
+</section>

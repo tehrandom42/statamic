@@ -1,63 +1,109 @@
 <style type="text/css">
-#col1 a img { border: 1px solid white;}
-#col1 a:hover img { border: 1px solid #009; }
-#col2 a img { border: 1px solid #eee;}
-#col2 a:hover img { border: 1px solid #009; }
+  #col1 a img {
+    border: 1px solid white;
+  }
+
+  #col1 a:hover img {
+    border: 1px solid #009;
+  }
+
+  #col2 a img {
+    border: 1px solid #eee;
+  }
+
+  #col2 a:hover img {
+    border: 1px solid #009;
+  }
 </style>
-<link rel="stylesheet" href="css/jcarousel.basic.css" type="text/css" />
-<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
-<script type="text/javascript" src="js/jcarousel.basic.js"></script>
+<link rel="stylesheet" href="{{ theme:css src="jcarousel.basic" }}">
+<script src="{{ theme:js src="jquery.jcarousel.min.js" }}"></script>
+<script src="{{ theme:js src="jcarousel.basic.js" }}"></script>
 <div class="jcarousel-wrapper">
-    <div class="jcarousel">
-        <ul>
-             <li>
+  <div class="jcarousel">
+    <ul>
+      <li>
 
-                <a href="/products/objects_sensors/index.php">
-                  <img src="/assets.images/Home-Page-Main-Art-ADAS_1000x335.png"
-                    alt="ADAS and Automated Vehicle Development"
-                    title="ADAS and Automated Vehicle Development">
-                </a>
-            </li>
-                    <li>
-                <a href="/products/carsim/index.php">
-                  <img src="/assets/images/Home-Page-Main-Art-CS_2017.0_1000x335.png"
-                    alt="CarSim 2017.0 - Perform your ADAS development with Sensors"
-                    title="CarSim 2017.0 - Perform your ADAS development with Sensors">
-                </a>
-            </li>
-               <li>
-                <a href="/products/carsim/index.php">
-                  <img src="/assets/images/Home-Page-Main-Art-CS_1000x335.png"
-                    alt="CarSim - Design, develop, test and plan vehicle programs"
-                    title="CarSim - Design, develop, test and plan vehicle programs">
-                </a>
-            </li>
-            <li>
-                <a href="/products/trucksim/index.php">
-                  <img src="/assets/images/Home-Page-Main-Art-TS_1000x335.png"
-                    alt="TruckSim - Design, develop, test and plan vehicle programs"
-                    title="TruckSim - Design, develop, test and plan vehicle programs">
-                </a>
-            </li>
-             <li>
-                <a href="/products/ds/index.php">
-                  <img src="/assets/images/Home-Page-Main-Art-QS_1000x335.png"
-                    alt="QuadDS Engineering Driving Simulators"
-                    title="QuadDS Engineering Driving Simulators">
-                </a>
-            </li>
-        </ul>
-    </div>
-    <a href="#" class="jcarousel-control-prev">
-      <img src="/assets/images/arrowleft.png" alt="Go to previous image in slide show" title="Go to previous image in slide show">
-    </a>
-    <a href="#" class="jcarousel-control-next">
-      <img src="/assets/images/arrowright.png" alt="Go to next image in slide show" title="Go to next image in slide show"></a>
+        <a href="/products/objects_sensors/index.php">
+          <img src="/assets/images/Home-Page-Main-Art-ADAS_1000x335.png" alt="ADAS and Automated Vehicle Development" title="ADAS and Automated Vehicle Development">
+        </a>
+      </li>
+      <li>
+        <a href="/products/carsim/index.php">
+          <img src="/assets/images/Home-Page-Main-Art-CS_2017.0_1000x335.png" alt="CarSim 2017.0 - Perform your ADAS development with Sensors" title="CarSim 2017.0 - Perform your ADAS development with Sensors">
+        </a>
+      </li>
+      <li>
+        <a href="/products/carsim/index.php">
+          <img src="/assets/images/Home-Page-Main-Art-CS_1000x335.png" alt="CarSim - Design, develop, test and plan vehicle programs" title="CarSim - Design, develop, test and plan vehicle programs">
+        </a>
+      </li>
+      <li>
+        <a href="/products/trucksim/index.php">
+          <img src="/assets/images/Home-Page-Main-Art-TS_1000x335.png" alt="TruckSim - Design, develop, test and plan vehicle programs" title="TruckSim - Design, develop, test and plan vehicle programs">
+        </a>
+      </li>
+      <li>
+        <a href="/products/ds/index.php">
+          <img src="/assets/images/Home-Page-Main-Art-QS_1000x335.png" alt="QuadDS Engineering Driving Simulators" title="QuadDS Engineering Driving Simulators">
+        </a>
+      </li>
+    </ul>
+  </div>
+  <a href="#" class="jcarousel-control-prev">
+    <img src="/assets/images/arrowleft.png" alt="Go to previous image in slide show" title="Go to previous image in slide show">
+  </a>
+  <a href="#" class="jcarousel-control-next">
+    <img src="/assets/images/arrowright.png" alt="Go to next image in slide show" title="Go to next image in slide show"></a>
 
-<!--
+  <!--
     <p class="jcarousel-pagination">
 
     </p>
 -->
 </div>
+<div id="wrapper" style="font-size: 12px; margin-left: auto; margin-right: auto;">
+  <div style="width: 50px; height: 6px; float: left;"></div>
+  <div id="news" style="width: 430px; float: left;">
+    <div style="height: 6px;"></div>
+    <div>
+      <table border="0" cellpadding="0">
+        <tr>
+          <td width="65" class="homepage-date">&nbsp;</td>
+          <td width="349" class="homepage-desc">
+        <a href="/publications/news.php" class="title-link"><h3 class="homepage-title">News</h3></a>
+        {{ collection:news_items }}
+      <tr>
+          <td class="homepage-date">{{ news_date }}</td>
+          <td class="homepage-desc">{{ news_content | markdown }}</td>
+      </tr>
+        {{ /collection:news_items }}
+      </table>
+    </div>
+    <div style="height: 6px;"></div>
+  </div>
+  <div style="width: 50px; float: left;">
+    &nbsp;
+  </div>
+  <div id="events" style="width: 430px; float: left;">
+    <div style="height: 6px;"></div>
+    <div>
+      <table border="0" cellpadding="0">
+        <tr>
+          <td width="125" class="homepage-date">&nbsp;</td>
+          <td width="320" class="homepage-desc">
+            <a href="/events/shows/index.php" class="title-link"><h3 class="homepage-title">Events</h3></a>
+          </td>
+        </tr>
+        {{ collection:event_items }}
+      <tr>
+          <td class="homepage-date">{{ event_date }}</td>
+          <td class="homepage-desc">{{ event_content | markdown }}</td>
+      </tr>
+      {{ /collection:event_items }}
+      </table>
+    </div>
+    <div style="height: 6px;"></div>
+  </div>
+  <div style="clear: both;"><br />
+</div></div>
 {{ content }}
