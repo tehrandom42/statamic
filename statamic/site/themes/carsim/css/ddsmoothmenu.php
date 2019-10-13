@@ -54,7 +54,7 @@ background: <?=$hilight_bk?>; /*background of menu items during onmouseover (hov
 color: <?=$hilight_text?>;
 border: white;
 }
-	
+
 /*1st sub level menu*/
 .ddsmoothmenu ul li ul{
 position: absolute;
@@ -84,9 +84,9 @@ background-color: <?=$submenubk?>;
 }
 
 
-.ddsmoothmenu ul li ul li a.selected{ 
+.ddsmoothmenu ul li ul li a.selected{
 color: <?=$hilight_text?>;
-background: <?=$hilight_bk?>; 
+background: <?=$hilight_bk?>;
 }
 
 /* Holly Hack for IE \*/

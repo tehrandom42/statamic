@@ -1,6 +1,63 @@
-<div class="container">
-    <h1>{{ title }}</h1>
-    <hr/>
-    {{ content }}
-</div>
+<style type="text/css">
+#col1 a img { border: 1px solid white;}
+#col1 a:hover img { border: 1px solid #009; }
+#col2 a img { border: 1px solid #eee;}
+#col2 a:hover img { border: 1px solid #009; }
+</style>
+<link rel="stylesheet" href="css/jcarousel.basic.css" type="text/css" />
+<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+<script type="text/javascript" src="js/jcarousel.basic.js"></script>
+<div class="jcarousel-wrapper">
+    <div class="jcarousel">
+        <ul>
+             <li>
 
+                <a href="/products/objects_sensors/index.php">
+                  <img src="/assets.images/Home-Page-Main-Art-ADAS_1000x335.png"
+                    alt="ADAS and Automated Vehicle Development"
+                    title="ADAS and Automated Vehicle Development">
+                </a>
+            </li>
+                    <li>
+                <a href="/products/carsim/index.php">
+                  <img src="/assets/images/Home-Page-Main-Art-CS_2017.0_1000x335.png"
+                    alt="CarSim 2017.0 - Perform your ADAS development with Sensors"
+                    title="CarSim 2017.0 - Perform your ADAS development with Sensors">
+                </a>
+            </li>
+               <li>
+                <a href="/products/carsim/index.php">
+                  <img src="/assets/images/Home-Page-Main-Art-CS_1000x335.png"
+                    alt="CarSim - Design, develop, test and plan vehicle programs"
+                    title="CarSim - Design, develop, test and plan vehicle programs">
+                </a>
+            </li>
+            <li>
+                <a href="/products/trucksim/index.php">
+                  <img src="/assets/images/Home-Page-Main-Art-TS_1000x335.png"
+                    alt="TruckSim - Design, develop, test and plan vehicle programs"
+                    title="TruckSim - Design, develop, test and plan vehicle programs">
+                </a>
+            </li>
+             <li>
+                <a href="/products/ds/index.php">
+                  <img src="/assets/images/Home-Page-Main-Art-QS_1000x335.png"
+                    alt="QuadDS Engineering Driving Simulators"
+                    title="QuadDS Engineering Driving Simulators">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <a href="#" class="jcarousel-control-prev">
+      <img src="/assets/images/arrowleft.png" alt="Go to previous image in slide show" title="Go to previous image in slide show">
+    </a>
+    <a href="#" class="jcarousel-control-next">
+      <img src="/assets/images/arrowright.png" alt="Go to next image in slide show" title="Go to next image in slide show"></a>
+
+<!--
+    <p class="jcarousel-pagination">
+
+    </p>
+-->
+</div>
+{{ content }}

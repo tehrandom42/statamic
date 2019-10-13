@@ -18,8 +18,20 @@
   <link rel="stylesheet" href="{{ theme:css }}">
   <!-- styles to control the appearance of the navigation menus -->
   <link rel="stylesheet" type="text/css" href="/site/themes/carsim/css/ddsmoothmenu.php" />
-  <link rel="stylesheet" href="{{ theme:css src="ddsmoothmenu"}}">
-  <link rel="stylesheet" href="{{ theme:css src="ddsmoothmenu-v"}}">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="{{ theme:js }}"></script>
+  <script src="{{ theme:js src="global" }}"></script>
+  <script src="{{ theme:js src="ddsmoothmenu/ddsmoothmenu" }}"></script>
+  <script type="text/javascript">
+    ddsmoothmenu.init({
+      mainmenuid: "smoothmenu1", //menu DIV id
+      orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+      classname: 'ddsmoothmenu', //class added to menu's outer DIV
+      //customtheme:  ["normal_background", "hover_background"],
+      contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+    })
+  </script>
 </head>
 
 <body>
@@ -59,31 +71,14 @@
       </div>
     </div>
     {{ partial:nav }}
-<br style="clear: left" />
     {{ template_content }}
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="{{ theme:js }}"></script>
-    <script src="{{ theme:js src="global" }}"></script>
-    <script src="{{ theme:js src="ddsmoothmenu/ddsmoothmenu" }}"></script>
-    <script type="text/javascript">
-      ddsmoothmenu.init({
-        mainmenuid: "smoothmenu1", //menu DIV id
-        orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
-        classname: 'ddsmoothmenu', //class added to menu's outer DIV
-        //customtheme:  ["normal_background", "hover_background"],
-        contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
-      })
-    </script>
   </div>
   <div id="wrapper" style="position: relative; height: 24px; background-color:#2d68b2; color:#FFFFFF; ">
     <div style="position: absolute; top: 4px; left: 50px; text-align:left;">
-      <a href="/contactus/index.php" style="font-size: 12px; color: #FFFFFF; text-decoration: none;"
-        title="Contact Mechanical Simulation Corporation">Contact Us</a>
+      <a href="/contactus/index.php" style="font-size: 12px; color: #FFFFFF; text-decoration: none;" title="Contact Mechanical Simulation Corporation">Contact Us</a>
     </div>
     <div style="position: absolute; top: 4px; right: 50px; text-align:left;">
-      <a href="/forms/newsletter.php" style="font-size: 12px; color: #FFFFFF; text-decoration: none;"
-        title="Subscribe To Mechanical Simulation Corporation's Newsletter">Subscribe to Newsletter</a>
+      <a href="/forms/newsletter.php" style="font-size: 12px; color: #FFFFFF; text-decoration: none;" title="Subscribe To Mechanical Simulation Corporation's Newsletter">Subscribe to Newsletter</a>
     </div>
     <div style="clear: both;"></div>
   </div>
@@ -92,6 +87,7 @@
       &copy; 2005-2019 Mechanical Simulation Corporation, All Rights Reserved.
       CarSim, SuspensionSim, TruckSim, BikeSim,<br />
       and VehicleSim are registered trademarks of Mechanical Simulation Corporation
-      in the USA and other countries.  </span></div>
+      in the USA and other countries. </span></div>
 </body>
+
 </html>
