@@ -1,16 +1,20 @@
   <div id="smoothmenu1" class="ddsmoothmenu">
     <ul>
-      {{ nav from="/" max_depth="5" }}
-      <li><a href="{{ url }}">{{ tag:nav_title or title }}</a>
-        {{if children}}
+      {{ nav from="/" max_depth="4" }}
+    <li{{ if children }} {{ /if }}>
+        <a href="{{ url }}">{{ title }}</a>
+        {{ if children }}
         <ul>
-          {{ children }}
-          <li><a href="{{ url }}">{{ tag:nav_title or title }}</a></li>
-          {{ /children }}
+            {{ if children }}
+                {{ *recursive children* }}
+            {{ /if }}
         </ul>
-        {{/if}}
-      </li>
-      {{ /nav }}
-      <br style="clear: left" />
-    </ul>
+        {{ /if }}
+    </li>
+    {{ /nav }}
+<br style="clear: left" />
+  </ul>
+
+
+
   </div>
