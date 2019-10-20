@@ -64,14 +64,13 @@
 <div id="wrapper" style="font-size: 12px; margin-left: auto; margin-right: auto;">
   <div style="width: 50px; height: 6px; float: left;"></div>
   <div id="news" style="width: 430px; float: left;">
-    <div style="height: 6px;"></div>
-    <div>
+    <div style="height: 6px;"></div>    <div>
       <table border="0" cellpadding="0">
         <tr>
           <td width="65" class="homepage-date">&nbsp;</td>
           <td width="349" class="homepage-desc">
         <a href="/publications/news.php" class="title-link"><h3 class="homepage-title">News</h3></a>
-        {{ collection:news_items }}
+        {{ collection:news_items | strip_tags:p }}
       <tr>
           <td class="homepage-date">{{ news_date }}</td>
           <td class="homepage-desc">{{ news_content | markdown }}</td>

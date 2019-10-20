@@ -1,0 +1,21 @@
+<div id="content">
+<div id="col1">
+{{ areas }}
+  {{ if type == "bodyarea" }}
+      {{ bodymd | markdown }}
+  {{ /if }}
+{{ /areas }}
+</div>
+  <div id="col2">
+      <div class="box">
+        {{ areas }}
+          {{ if type == "sidearea" }}
+            {{ sidemd | markdown }}
+            {{ relate:include_sidebar_pieces }}
+              {{ content }}
+            {{ /relate:include_sidebar_pieces }}  
+          {{ /if }}
+        {{ /areas }}
+</div>
+</div>
+<div style="clear: both;"></div>

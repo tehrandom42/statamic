@@ -1,0 +1,51 @@
+sections:
+  main:
+    display: Main
+    fields:
+      template:
+        type: template
+        display: Template
+      title:
+        display: Title
+        type: text
+        localizable: true
+      slug:
+        display: Slug
+        type: text
+      areas:
+        type: replicator
+        display: Areas
+        sets:
+          bodyarea:
+            display: bodyarea
+            fields:
+              bodymd:
+                cheatsheet: true
+                restrict_assets: false
+                type: markdown
+                display: bodymd
+          sidearea:
+            display: SIDEAREA
+            fields:
+              sidemd:
+                cheatsheet: true
+                restrict_assets: false
+                type: markdown
+                display: sidemd
+              include_sidebar_pieces:
+                max_items: '3'
+                collection:
+                  - sidebar_pieces
+                mode: panes
+                type: collection
+                display: 'Include Sidebar Pieces'
+              photo:
+                container: main
+                folder: /
+                restrict: false
+                mode: list
+                type: assets
+                display: photo
+                max_files: 1
+taxonomies: false
+title: 'Product Download Page'
