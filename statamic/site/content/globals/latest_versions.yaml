@@ -1,0 +1,7 @@
+version_bikesim: '2019.1'
+version_carsim: '2019.1'
+version_suspensionsim: '2019.0'
+version_trucksim: '2019.1'
+fieldset: product_versions
+title: 'Latest Versions'
+id: b134cfbf-de4f-4b13-8e60-f992b3799633

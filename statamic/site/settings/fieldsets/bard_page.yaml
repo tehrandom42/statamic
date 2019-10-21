@@ -1,0 +1,70 @@
+sections:
+  main:
+    display: Main
+    fields:
+      title:
+        display: Title
+        type: text
+        localizable: true
+      slug:
+        display: Slug
+        type: text
+      template:
+        type: template
+        display: Template
+      main_content:
+        buttons:
+          - h2
+          - h3
+          - bold
+          - italic
+          - unorderedlist
+          - orderedlist
+          - removeformat
+          - quote
+          - anchor
+        style: sans
+        spellcheck: true
+        allow_source: true
+        allow_internal_links: true
+        link_noopener: false
+        link_noreferrer: false
+        target_blank: true
+        semantic_elements: false
+        container: main
+        folder: /
+        restrict_assets: false
+        type: bard
+        display: 'Main Content'
+        sets:
+          image:
+            display: image
+            fields:
+              image:
+                container: main
+                folder: /
+                restrict: false
+                mode: grid
+                type: assets
+                display: image
+                max_files: 1
+          video:
+            display: video
+            fields:
+              video:
+                type: video
+                display: video
+      has_sidebar:
+        type: toggle
+        display: 'Has Sidebar'
+      sidebar_content:
+        max_items: '3'
+        collection:
+          - sidebard_pieces
+        mode: panes
+        type: collection
+        display: 'Sidebar Content'
+        show_when:
+          has_sidebar: true
+taxonomies: false
+title: 'Bard Page'

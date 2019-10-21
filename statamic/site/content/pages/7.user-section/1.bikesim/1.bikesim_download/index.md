@@ -6,7 +6,7 @@ areas:
     bodymd: |
       # BikeSim 2019.1 Download
       
-      The current version of BikeSim is 2019.1
+      The current version of BikeSim is {{ latest_versions:version_bikesim }}
       
       July 1, 2019. This page has downloadable installers for BikeSim 2019.1 for [Windows and all supported RT systems](#). This major release is recommended for all users.
       

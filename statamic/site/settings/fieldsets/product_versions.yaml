@@ -1,0 +1,23 @@
+sections:
+  main:
+    display: Main
+    fields:
+      version_bikesim:
+        type: text
+        display: 'Latest BikeSim'
+        instructions: 'Use in content : {{ latest_versions:version_bikesim }}'
+      version_carsim:
+        type: text
+        display: 'Latest CarSim'
+        instructions: 'Use in content : {{ latest_versions:version_carsim }}'
+      version_suspensionsim:
+        type: text
+        display: 'Latest SuspensionSim'
+        instructions: 'Use in content : {{ latest_versions:version_suspensionsim }}'
+      version_trucksim:
+        type: text
+        display: 'Latest TruckSim'
+        instructions: 'Use in content : {{ latest_versions:version_trucksim }}'
+taxonomies: false
+title: 'Latest Versions'
+create_title: latest_versions
