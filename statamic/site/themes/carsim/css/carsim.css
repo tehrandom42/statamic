@@ -43,6 +43,10 @@ td.homepage-desc a.title-link:hover {
   color: black;
 }
 
+.nowrap {
+  white-space: nowrap ;
+}
+
 #wrapper  {
   /*border: 1px solid #fff;*/
   text-align: left;
