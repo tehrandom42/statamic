@@ -1,14 +1,28 @@
-<section class="container-fluid">
-<br>{{ content }}
-
+<div id="content">
+<div class="class" id="col1">
+{{ content }}
+<h3>Recent News</h3>
 <div>
-  {{ collection:news_items }}
   <table border="0" cellpadding="0">
-  <tr>
+    <tr>
+      <td width="65" class="homepage-date">&nbsp;</td>
+      <td width="349" class="homepage-desc"><h3 class="homepage-title">News</h3></td>
+    </tr>
+  {{ collection:news_items }}
+<tr>
     <td class="homepage-date">{{ news_date }}</td>
-    <td class="homepage-desc">{{ news_content | markdown }}</td>
+    <td class="homepage-desc">{{ news_content | markdown | strip_tags:p }}</td>
 </tr>
+  {{ /collection:news_items }}
 </table>
-{{ /collection:news_items }}
+<br />
+  <h3>Press Releases</h3>
+  <p>Read about our most <a href="/publications/pressreleases/index.php">current
+      news and product announcements</a>.</p>
+  <h3>Newsletter Archives</h3>
+  <p>      Misplaced a newsletter? This section is an <a href="/publications/newsletter/index.php">archive
+      of past newsletters</a>      which contain information about product changes and coming events.</p>
 </div>
-</section>
+</div>
+</div>
+<div style="clear: both;">
