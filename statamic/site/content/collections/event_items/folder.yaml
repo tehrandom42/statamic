@@ -3,5 +3,6 @@ order: number
 fieldset: event_fields
 template: events
 columns:
-  - event_date
-  - event_content
+  - event_start
+  - event_end
+  - title

@@ -7,9 +7,26 @@ sections:
         restrict_assets: false
         type: markdown
         display: Content
-      event_date:
-        type: textarea
-        display: Date
+      event_start:
+        allow_blank: false
+        allow_time: true
+        require_time: false
+        earliest_date: 'January 1, 1900'
+        type: date
+        display: 'Event Date'
+        instructions: 'Specify the day of the event.   **event_start**'
+      event_end:
+        allow_blank: true
+        allow_time: true
+        require_time: false
+        earliest_date: 'January 1, 1900'
+        type: date
+        display: 'End Date (if multiple days)'
+        instructions: 'Specifies whether or not the event is multiple days and when the event ends if so.   **event_end**'
+      event_homepage_visible:
+        type: toggle
+        instructions: 'Whether the event should be visible on the homepage. **event_homepage_visible**'
+        display: 'Publish to Home Page'
 taxonomies: true
 title: Events
 create_title: 'Events Fieldset'

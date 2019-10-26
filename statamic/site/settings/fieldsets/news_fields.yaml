@@ -2,14 +2,23 @@ sections:
   main:
     display: Main
     fields:
-      news_date:
-        type: textarea
-        display: Date
+      news_published_date:
+        allow_blank: false
+        allow_time: true
+        require_time: false
+        earliest_date: 'January 1, 1900'
+        type: date
+        instructions: 'Specify Date of News Posting.  **news_published_date**'
+        display: 'Date of News Posting'
       news_content:
         cheatsheet: true
         restrict_assets: false
         type: markdown
         display: Content
+      news_homepage_visible:
+        type: toggle
+        instructions: 'Specify whether or not this item displays on the homepage.  **news_homepage_visible**'
+        display: 'Publish to Home Page'
 taxonomies: false
 title: News
 create_title: 'News Article'

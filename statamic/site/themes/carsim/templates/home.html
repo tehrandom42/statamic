@@ -70,9 +70,9 @@
           <td width="65" class="homepage-date">&nbsp;</td>
           <td width="349" class="homepage-desc">
         <a href="/publications/news.php" class="title-link"><h3 class="homepage-title">News</h3></a>
-        {{ collection:news_items }}
+        {{ collection:news_items news_homepage_visible:is="true" }}
       <tr>
-          <td class="homepage-date">{{ news_date }}</td>
+          <td class="homepage-date">{{ news_published_date format="M j" }}</td>
           <td class="homepage-desc">{{ news_content | markdown | strip_tags:p }}</td>
       </tr>
         {{ /collection:news_items }}
@@ -93,9 +93,9 @@
             <a href="/events/shows/index.php" class="title-link"><h3 class="homepage-title">Events</h3></a>
           </td>
         </tr>
-        {{ collection:event_items }}
+        {{ collection:event_items event_homepage_visible:is="true" }}
       <tr>
-          <td class="homepage-date">{{ event_date }}</td>
+          <td class="homepage-date">{{ event_start format="M j" }}{{if event_end}}-{{ event_end format="j" }}{{ /if }}</td>
           <td class="homepage-desc">{{ event_content | markdown | strip_tags:p }}</td>
       </tr>
       {{ /collection:event_items }}

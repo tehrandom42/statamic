@@ -2,6 +2,7 @@ title: News
 order: number
 fieldset: news_fields
 template: news
-columns: 
-  - news_date
+columns:
+  - news_published_date
   - news_content
+  - news_homepage_visible
