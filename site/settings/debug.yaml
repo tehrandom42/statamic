@@ -1,0 +1,5 @@
+debug: "{env:DEBUG}"
+debug_bar: "{env:DEBUG_BAR}"
+loggers:
+  file:
+    daily: true

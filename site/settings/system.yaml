@@ -4,5 +4,5 @@ locales:
   en:
     full: en_US
     name: English
-    url: 'http://localhost/'
+    url: "{env:SITE_URL}"
 timezone: America/Detroit
