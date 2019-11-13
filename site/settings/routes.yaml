@@ -1,0 +1,4 @@
+routes:
+  '/user-section/{product}/download': product-download
+collections:
+  products: '/products/{slug}'

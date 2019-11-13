@@ -1,0 +1,85 @@
+sections:
+  main:
+    display: Main
+    fields:
+      title:
+        display: Title
+        type: text
+        width: 50
+        localizable: true
+      slug:
+        display: Slug
+        type: text
+        width: 50
+      features:
+        type: list
+        display: Features
+        width: 50
+      main_content:
+        buttons:
+          - h2
+          - h3
+          - bold
+          - italic
+          - unorderedlist
+          - orderedlist
+          - removeformat
+          - quote
+          - anchor
+        style: sans
+        spellcheck: true
+        allow_source: true
+        allow_internal_links: true
+        link_noopener: false
+        link_noreferrer: false
+        target_blank: false
+        semantic_elements: false
+        restrict_assets: false
+        sets:
+          image:
+            display: Image
+            fields:
+              image:
+                container: main
+                folder: /
+                restrict: false
+                max_files: 1
+                type: assets
+                display: Image
+        type: bard
+        display: 'Main Content'
+      releases:
+        mode: stacked
+        fields:
+          title:
+            type: text
+            display: Title
+            width: 50
+          release_date:
+            allow_blank: false
+            allow_time: true
+            require_time: false
+            earliest_date: 'January 1, 1900'
+            type: date
+            width: 50
+            display: 'Release Date'
+          download:
+            type: text
+            width: 50
+            display: Download
+          disk_image:
+            type: text
+            width: 50
+            display: 'Disk Image'
+          new_features:
+            type: list
+            width: 50
+            display: 'New Features'
+          bug_fixes:
+            type: list
+            width: 50
+            display: 'Bug Fixes'
+        type: grid
+        display: Releases
+taxonomies: false
+title: Product

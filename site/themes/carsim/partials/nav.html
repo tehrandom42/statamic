@@ -1,6 +1,6 @@
   <div id="smoothmenu1" class="ddsmoothmenu; nowrap">
     <ul>
-      {{ nav from="/" max_depth="4" }}
+      {{ nav from="/" max_depth="4" include_entries="true" }}
       <li{{ if children }} {{ /if }}>
         <a href="{{ url }}">{{ title }}</a>
         {{ if children }}
