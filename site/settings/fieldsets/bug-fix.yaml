@@ -1,0 +1,12 @@
+sections:
+  main:
+    display: Main
+    fields:
+      issue:
+        type: text
+        display: Issue
+      description:
+        type: textarea
+        display: Description
+taxonomies: true
+title: 'Bug Fix'

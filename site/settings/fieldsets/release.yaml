@@ -1,0 +1,55 @@
+title: Release
+sections:
+  main:
+    display: Main
+    fields:
+      title:
+        type: text
+        display: Title
+        localizable: true
+        width: 50
+      slug:
+        type: text
+        display: Slug
+        localizable: true
+        width: 50
+      date:
+        allow_blank: false
+        allow_time: false
+        require_time: false
+        earliest_date: "January 1, 1900"
+        type: date
+        width: 33
+        display: "Release Date"
+      download:
+        type: text
+        width: 33
+        display: Download
+      disk_image:
+        type: text
+        width: 33
+        display: "Disk Image"
+      main_content:
+        buttons:
+          - h2
+          - h3
+          - bold
+          - italic
+          - unorderedlist
+          - orderedlist
+          - removeformat
+          - quote
+          - anchor
+        style: sans
+        spellcheck: true
+        allow_source: true
+        allow_internal_links: true
+        link_noopener: false
+        link_noreferrer: false
+        target_blank: false
+        semantic_elements: false
+        restrict_assets: false
+        type: bard
+        display: Content
+taxonomies: true
+create_title: "Create Release"

@@ -11,10 +11,16 @@ sections:
         display: Slug
         type: text
         width: 50
-      features:
-        type: list
-        display: Features
+      releases:
+        max_items: 1
+        type: collections
         width: 50
+        display: Releases
+      bug_fixes:
+        max_items: 1
+        type: collections
+        width: 50
+        display: 'Bug Fixes'
       main_content:
         buttons:
           - h2
@@ -46,40 +52,15 @@ sections:
                 max_files: 1
                 type: assets
                 display: Image
+          latest_release:
+            display: 'Latest Release'
+            fields:
+              release:
+                max_items: '1'
+                collection: {  }
+                type: collection
+                display: Release
         type: bard
         display: 'Main Content'
-      releases:
-        mode: stacked
-        fields:
-          title:
-            type: text
-            display: Title
-            width: 50
-          release_date:
-            allow_blank: false
-            allow_time: true
-            require_time: false
-            earliest_date: 'January 1, 1900'
-            type: date
-            width: 50
-            display: 'Release Date'
-          download:
-            type: text
-            width: 50
-            display: Download
-          disk_image:
-            type: text
-            width: 50
-            display: 'Disk Image'
-          new_features:
-            type: list
-            width: 50
-            display: 'New Features'
-          bug_fixes:
-            type: list
-            width: 50
-            display: 'Bug Fixes'
-        type: grid
-        display: Releases
 taxonomies: false
 title: Product

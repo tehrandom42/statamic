@@ -1,25 +1,25 @@
 <div id="content">
   <div id="col1">
     {{ main_content }}
-    {{ if type == "text" }}
-    <div class="text">
-      {{ text }}
-    </div>
-    {{ elseif type == "image" }}
-    <figure>
-      <img src="{{ image }}" alt="" />
-    </figure>
-    {{ /if }}
+      {{ if type == "text" }}
+        <div class="text">
+          {{ text }}
+        </div>
+      {{ elseif type == "image" }}
+        <figure>
+          <img src="{{ image }}" alt="" />
+        </figure>
+      {{ /if }}
     {{ /main_content }}
   </div>
   {{ if has_sidebar== "true" }}
-  <div id="col2">
-    <div class="box">
-      {{ relate:include_sidebard_pieces }}
-      {{ sidebar_content }}
-      {{ /relate:include_sidebard_pieces }}
+    <div id="col2">
+      <div class="box">
+        {{ relate:include_sidebard_pieces }}
+          {{ sidebar_content }}
+        {{ /relate:include_sidebard_pieces }}
+      </div>
     </div>
-  </div>
   {{ /if }}
 </div>
 <div style="clear: both;"></div>
