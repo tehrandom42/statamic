@@ -1,5 +1,5 @@
 template: product_download
-title: 'BikeSim Download'
+title: Download
 areas:
   -
     type: bodyarea
@@ -40,6 +40,7 @@ areas:
       
       ### Getting Started
       If you have not used BikeSim recently, please go through the **BikeSim Quick Start Guide** (updated June 2018).
+      
   -
     type: sidearea
     include_sidebar_pieces:
@@ -47,3 +48,4 @@ areas:
       - db1cf0b9-d9f2-4042-8cc3-d12b09997058
 fieldset: product_download_page
 id: c8ff7586-36f3-4b29-99ba-1bd09344612d
+mount: carsim-releases
